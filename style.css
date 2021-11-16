@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5em;
+  background-color: #262626;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em 1em;
+  grid-auto-flow: row dense;
+}
+
+.item {
+  text-align: center;
+  background: black;
+  border-radius: 0.25em;
+  padding: 8em;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.big {
+  text-align: center;
+  background: red;
+  grid-column: auto / span 2;
+  grid-row: auto / span 2;
+  border: 2px solid #fff;
+  color: #fff;
+}
